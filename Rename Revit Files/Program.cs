@@ -63,7 +63,7 @@ namespace Rename_Revit_Files
                 {
                     fi.MoveTo(FilepathNew);
                 }
-                catch
+                catch (InvalidCastException e)
                 {
                     return 0;
                 }
